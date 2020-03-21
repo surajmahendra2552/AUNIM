@@ -1,0 +1,34 @@
+i am getting this error while using installing pyttsx3 please help me and i am using winsows 8.1 pro (os) and visual studio code and also python 3.7.2
+C:\Users\SURAJ MAHENDRA\Desktop>E:/PYTHON/python.exe "c:/Users/SURAJ MAHENDRA/Desktop/suraj.py"
+
+C:\Users\SURAJ MAHENDRA\Desktop>pip install pyttsx3
+Collecting pyttsx3
+  Using cached pyttsx3-2.84-py3-none-any.whl (39 kB)
+Collecting pyobjc>=2.4
+  Using cached pyobjc-6.1-py3-none-any.whl (2.9 kB)
+Collecting comtypes; "win32" in sys_platform
+  Using cached comtypes-1.1.7.zip (180 kB)
+Collecting pyobjc-framework-SecurityInterface==6.1
+  Downloading pyobjc-framework-SecurityInterface-6.1.tar.gz (23 kB)
+    ERROR: Command errored out with exit status 1:
+     command: 'e:\python\python.exe' -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\SURAJM~1\\AppData\\Local\\Temp\\pip-install-i2qlzoqp\\pyobjc-framework-SecurityInterface\\setup.py'"'"'; __file__='"'"'C:\\Users\\SURAJM~1\\AppData\\Local\\Temp\\pip-install-i2qlzoqp\\pyobjc-framework-SecurityInterface\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base 'C:\Users\SURAJM~1\AppData\Local\Temp\pip-install-i2qlzoqp\pyobjc-framework-SecurityInterface\pip-egg-info'
+         cwd: C:\Users\SURAJM~1\AppData\Local\Temp\pip-install-i2qlzoqp\pyobjc-framework-SecurityInterface\
+    Complete output (15 lines):
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "C:\Users\SURAJM~1\AppData\Local\Temp\pip-install-i2qlzoqp\pyobjc-framework-SecurityInterface\setup.py", line
+23, in <module>
+        extra_link_args=["-framework", "SecurityInterface"],
+      File "C:\Users\SURAJM~1\AppData\Local\Temp\pip-install-i2qlzoqp\pyobjc-framework-SecurityInterface\pyobjc_setup.py", line 408, in Extension
+        os_level = get_os_level()
+      File "C:\Users\SURAJM~1\AppData\Local\Temp\pip-install-i2qlzoqp\pyobjc-framework-SecurityInterface\pyobjc_setup.py", line 218, in get_os_level
+        pl = plistlib.readPlist("/System/Library/CoreServices/SystemVersion.plist")
+      File "e:\python\lib\plistlib.py", line 99, in readPlist
+        with _maybe_open(pathOrFile, 'rb') as fp:
+      File "e:\python\lib\contextlib.py", line 112, in __enter__
+        return next(self.gen)
+      File "e:\python\lib\plistlib.py", line 82, in _maybe_open
+        with open(pathOrFile, mode) as fp:
+    FileNotFoundError: [Errno 2] No such file or directory: '/System/Library/CoreServices/SystemVersion.plist'
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
